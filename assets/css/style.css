@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-wrap button {
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-wrap button + button {
+  margin-left: 2rem;
+}
+
+.modal-wrap {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-wrap .modal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 60rem;
+  height: 40rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.modal-wrap .modal .modal-head .close {
+  font-size: 4rem;
+}
+
+.modal-wrap .modal .modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+.modal-wrap .modal .modal-body {
+  flex: 1;
+  padding: 2rem 0;
+  font-size: 1.6rem;
+}
+.modal-wrap .modal .modal-foot {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.modal-wrap .modal .modal-foot button {
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+}
